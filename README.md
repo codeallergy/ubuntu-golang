@@ -5,7 +5,7 @@ Docker container for Ubuntu with Golang
 ### Docker image
 
 ```
-docker run shvid/ubuntu-golang go version
+docker run codeallergy/ubuntu-golang go version
 ```
 
 ### Build
