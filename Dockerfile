@@ -11,9 +11,9 @@ RUN echo "Download GoLang" && \
     tar -C /usr/local -xzf go${GO_VER}.linux-amd64.tar.gz && \
     rm go${GO_VER}.linux-amd64.tar.gz
 
-ENV GOROOT=/usr/local/go/
-ENV PATH=$PATH:$GOROOT/bin
+ENV GOROOT=/usr/local/go
 ENV GOPATH=/go
+ENV PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 # Prefetch some x packages
 RUN go get \
